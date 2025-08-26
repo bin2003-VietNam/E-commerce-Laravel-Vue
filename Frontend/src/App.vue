@@ -1,10 +1,11 @@
-<script setup></script>
+<script setup>
+import Home from './views/home.vue';
+
+</script>
 
 <template>
-  <div class="h-screen w-screen flex justify-center items-center bg-amber-200">
-      <div>
-        Tailwind worked
-      </div>
+  <div class="min-w-screen min-h-screen bg-amber-900">
+    <Home />
   </div>
 </template>
 
