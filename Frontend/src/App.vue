@@ -4,7 +4,7 @@ import Home from './views/home.vue';
 </script>
 
 <template>
-  <div class="min-w-screen min-h-screen bg-amber-900">
+  <div class="min-w-screen min-h-screen bg-white">
     <Home />
   </div>
 </template>
