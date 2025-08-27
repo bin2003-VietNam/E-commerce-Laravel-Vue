@@ -5,7 +5,7 @@ import userIcon from "@/assets/images/user.png"
 
 <template>
     <!-- heading -->
-    <div class="w-screen h-20 bg-transparent p-5 flex flex-row justify-around items-center text-xl">
+    <div class="w-screen h-20 bg-transparent p-5 flex flex-row justify-around items-center text-xl border-b-1">
         <div class="flex flex-row justify-around items-center gap-10">
             <a href="/">Bin Logo</a>
             <form action="" method="POST"

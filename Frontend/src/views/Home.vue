@@ -224,7 +224,5 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
             </div>
         </div>
-
-
     </div>
 </template>
