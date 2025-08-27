@@ -172,5 +172,22 @@
                 }
             ]
         }
-    ]
+    ],
+    "images": {
+        "banner1": "@/assets/images/banner1.jpg",
+        "banner2": "@/assets/images/banner2.jpg",
+        "banner3": "@/assets/images/banner3.jpg",
+
+        "iphone": "@/assets/images/iphone.jpg",
+        "phone": "@/assets/images/phone.png",
+        "watch": "@/assets/images/watch.png",
+        "camera": "@/assets/images/camera.png",
+        "headphone": "@/assets/images/headphone.png",
+        "monitor": "@/assets/images/monitor.png",
+        "gamepad": "@/assets/images/gamepad.png",
+        
+        "cartIcon": "@/assets/images/cart.png",
+        "userIcon": "@/assets/images/user.png",
+        "heartIcon": "@/assets/images/heart.png"
+    }
 }

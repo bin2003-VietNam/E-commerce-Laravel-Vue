@@ -1,7 +1,5 @@
 <script setup>
-
-
-
+import data from "@/data.json"
 import banner1 from "@/assets/images/banner1.jpg"
 import banner2 from "@/assets/images/banner2.jpg"
 import banner3 from "@/assets/images/banner3.jpg"
@@ -20,6 +18,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+// data
+let images = data.images
 
 </script>
 
@@ -104,9 +105,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
                         </div>
                     </div>
                 </div>
-
-                <Pagination />
-
             </div>
         </div>
     </div>

@@ -8,10 +8,9 @@ import Products from './views/Products.vue';
 <template>
   <div class="w-screen min-h-screen bg-white">
     <Layout>
-      <!-- <Home /> -->
-      <Products />
+      <Home />
+      <!-- <Products /> -->
     </Layout>
   </div>
 </template>
 
-<style scoped></style>
