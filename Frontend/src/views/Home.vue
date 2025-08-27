@@ -1,5 +1,5 @@
 <script setup>
-import heartIcon from "@/assets/images/heart.png"
+
 
 
 import banner1 from "@/assets/images/banner1.jpg"
@@ -84,126 +84,9 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 place-items-center ">
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
-                        <div class="w-full flex justify-end mb-2 pr-6 pt-3">
-                            <div class="w-7 h-7">
-                                <img :src="heartIcon" />
-                            </div>
-                        </div>
-                        <div class="w-full h-40 mb-1">
-                            <img :src="iphone" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center ">
-                            <p class="text-center">Apple Iphone 14 Pro Max 128GB Deep Pink</p>
-                            <p class="font-bold text-3xl">$900</p>
-                        </div>
-                        <div class="w-full h-auto flex justify-center items-center">
-                            <button class="w-45 h-10 bg-black rounded-xl text-white">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
+                    <div 
+                        v-for="value in 8" v-bind:key="value"
+                        class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3 shadow-xl">
                         <div class="w-full flex justify-end mb-2 pr-6 pt-3">
                             <div class="w-7 h-7">
                                 <img :src="heartIcon" />
@@ -221,6 +104,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
                         </div>
                     </div>
                 </div>
+
+                <Pagination />
 
             </div>
         </div>

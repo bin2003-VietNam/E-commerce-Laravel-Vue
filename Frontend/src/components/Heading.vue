@@ -1,6 +1,7 @@
 <script setup>
 import cartIcon from "@/assets/images/cart.png"
 import userIcon from "@/assets/images/user.png"
+import heartIcon from "@/assets/images/heart.png"
 </script>
 
 <template>

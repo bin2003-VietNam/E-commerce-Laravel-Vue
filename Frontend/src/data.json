@@ -1,0 +1,176 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "Brand",
+            "content": [
+                {
+                    "name": "Apple",
+                    "count": 110
+                },
+                {
+                    "name": "Samsung",
+                    "count": 125
+                },
+                {
+                    "name": "Xiaomi",
+                    "count": 68
+                },
+                {
+                    "name": "Poco",
+                    "count": 44
+                },
+                {
+                    "name": "OPPO",
+                    "count": 36
+                },
+                {
+                    "name": "Honor",
+                    "count": 10
+                },
+                {
+                    "name": "Motorola",
+                    "count": 34
+                },
+                {
+                    "name": "Nokia",
+                    "count": 22
+                },
+                {
+                    "name": "Realme",
+                    "count": 35
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Price Range",
+            "content": [
+                {
+                    "name": "Under $200",
+                    "count": 85
+                },
+                {
+                    "name": "$200 - $500",
+                    "count": 150
+                },
+                {
+                    "name": "$500 - $800",
+                    "count": 92
+                },
+                {
+                    "name": "$800 - $1200",
+                    "count": 47
+                },
+                {
+                    "name": "Above $1200",
+                    "count": 20
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Screen Size",
+            "content": [
+                {
+                    "name": "5.0\" - 5.9\"",
+                    "count": 40
+                },
+                {
+                    "name": "6.0\" - 6.4\"",
+                    "count": 120
+                },
+                {
+                    "name": "6.5\" - 6.9\"",
+                    "count": 180
+                },
+                {
+                    "name": "7.0\" and above",
+                    "count": 35
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "RAM",
+            "content": [
+                {
+                    "name": "2 GB",
+                    "count": 12
+                },
+                {
+                    "name": "4 GB",
+                    "count": 68
+                },
+                {
+                    "name": "6 GB",
+                    "count": 105
+                },
+                {
+                    "name": "8 GB",
+                    "count": 130
+                },
+                {
+                    "name": "12 GB",
+                    "count": 75
+                },
+                {
+                    "name": "16 GB",
+                    "count": 20
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Storage",
+            "content": [
+                {
+                    "name": "32 GB",
+                    "count": 15
+                },
+                {
+                    "name": "64 GB",
+                    "count": 85
+                },
+                {
+                    "name": "128 GB",
+                    "count": 140
+                },
+                {
+                    "name": "256 GB",
+                    "count": 115
+                },
+                {
+                    "name": "512 GB",
+                    "count": 50
+                },
+                {
+                    "name": "1 TB",
+                    "count": 12
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Battery Capacity",
+            "content": [
+                {
+                    "name": "3000 - 3999 mAh",
+                    "count": 45
+                },
+                {
+                    "name": "4000 - 4999 mAh",
+                    "count": 110
+                },
+                {
+                    "name": "5000 - 5999 mAh",
+                    "count": 130
+                },
+                {
+                    "name": "6000 mAh and above",
+                    "count": 25
+                }
+            ]
+        }
+    ]
+}

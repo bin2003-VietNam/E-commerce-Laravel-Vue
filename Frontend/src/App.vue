@@ -1,7 +1,7 @@
 <script setup>
 import Layout from './layouts/Layout.vue';
 import Home from '@/views/Home.vue'
-import ProductDetail from './views/ProductDetail.vue';
+import Products from './views/Products.vue';
 
 </script>
 
@@ -9,7 +9,7 @@ import ProductDetail from './views/ProductDetail.vue';
   <div class="w-screen min-h-screen bg-white">
     <Layout>
       <!-- <Home /> -->
-      <ProductDetail />
+      <Products />
     </Layout>
   </div>
 </template>
