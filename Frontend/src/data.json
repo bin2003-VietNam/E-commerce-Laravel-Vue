@@ -177,7 +177,6 @@
         "banner1": "@/assets/images/banner1.jpg",
         "banner2": "@/assets/images/banner2.jpg",
         "banner3": "@/assets/images/banner3.jpg",
-
         "iphone": "@/assets/images/iphone.jpg",
         "phone": "@/assets/images/phone.png",
         "watch": "@/assets/images/watch.png",
@@ -185,9 +184,81 @@
         "headphone": "@/assets/images/headphone.png",
         "monitor": "@/assets/images/monitor.png",
         "gamepad": "@/assets/images/gamepad.png",
-        
         "cartIcon": "@/assets/images/cart.png",
         "userIcon": "@/assets/images/user.png",
         "heartIcon": "@/assets/images/heart.png"
+    },
+    "ProductDetail": {
+        "title": "Apple iphone 14 Pro Max",
+        "price": "1399",
+        "discount": "1499",
+        "colors": [
+            "#000000",
+            "#800080",
+            "#FF0000",
+            "#FFFF00",
+            "#808080"
+        ],
+        "storages": [
+            "128GB",
+            "256GB",
+            "512GB",
+            "1TB",
+            "2TB",
+            "3TB"
+        ],
+        "features": [
+            {
+                "icon": "https://i.pinimg.com/564x/85/a4/94/85a4949ab9660ca7aaacaaad81dca044.jpg",
+                "title": "CPU",
+                "content": "Apple A16 Bionic"
+            },
+            {
+                "icon": "https://i.pinimg.com/564x/85/a4/94/85a4949ab9660ca7aaacaaad81dca044.jpg",
+                "title": "CPU",
+                "content": "Apple A16 Bionic"
+            },
+            {
+                "icon": "https://i.pinimg.com/564x/85/a4/94/85a4949ab9660ca7aaacaaad81dca044.jpg",
+                "title": "CPU",
+                "content": "Apple A16 Bionic"
+            },
+            {
+                "icon": "https://i.pinimg.com/564x/85/a4/94/85a4949ab9660ca7aaacaaad81dca044.jpg",
+                "title": "CPU",
+                "content": "Apple A16 Bionic"
+            },
+            {
+                "icon": "https://i.pinimg.com/564x/85/a4/94/85a4949ab9660ca7aaacaaad81dca044.jpg",
+                "title": "CPU",
+                "content": "Apple A16 Bionic"
+            },
+            {
+                "icon": "https://i.pinimg.com/564x/85/a4/94/85a4949ab9660ca7aaacaaad81dca044.jpg",
+                "title": "CPU",
+                "content": "Apple A16 Bionic"
+            }
+        ],
+        "text": "Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras more...",
+        "highlights": [
+            {
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ysvoxs5gmin3Z3ZX_3At5N3pjGDcZ34iAA&s",
+                "title": "Free Delivery",
+                "content": "1-2 day"
+
+            },
+            {
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ysvoxs5gmin3Z3ZX_3At5N3pjGDcZ34iAA&s",
+                "title": "Instock",
+                "content": "Today"
+
+            },
+            {
+                "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ysvoxs5gmin3Z3ZX_3At5N3pjGDcZ34iAA&s",
+                "title": "Gruaranteed",
+                "content": "1 year"
+
+            }
+        ]
     }
 }
