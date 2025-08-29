@@ -2,6 +2,10 @@
 import iphone from "@/assets/images/iphone.jpg"
 import data from "@/data.json"
 import { ref } from "vue";
+import {
+    ChevronDownIcon 
+} from '@heroicons/vue/24/outline'
+
 
 let dataProductDetail = ref(data.ProductDetail)
 
@@ -24,9 +28,9 @@ function handle_AddToCart() {
 </script>
 
 <template>
-    <div class="w-screen min-h-[1500px] flex flex-col gap-4 px-[160px] py-[24px] bg-gray-300">
+    <div class="w-screen min-h-[1500px] flex flex-col gap-4 px-[160px] py-[24px]">
         <!-- Main info -->
-        <section class="w-full h-[896px] bg-white mb-5 flex flex-row items-start py-[112px]">
+        <section class="w-full h-[896px] mb-5 flex flex-row items-start py-[112px]">
             <!-- Picture -->
             <div class="flex-2/5 flex flex-row items-center justify-center">
                 <div>
@@ -109,12 +113,32 @@ function handle_AddToCart() {
         </section>
 
         <!-- Detail -->
-        <section class="w-full h-[896px] bg-amber-300 mb-5">
-
+        <section class="w-full min-h-[896px]  mb-5 p-5">
+            <h2 class="text-3xl font-semibold mb-10">Detail</h2>
+            <p class="text-lg font-light">
+                Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.
+            </p>
+            <!-- info 1 -->
+            <div>
+                <h2 class="text-3xl font-semibold mb-5 mt-10">Screen</h2>
+                <div class="flex flex-row justify-between border-b-1 pb-2 text-xl">
+                    <p>Additionally</p>
+                    <div class="flex flex-col items-end-safe">
+                        <p>Dynamic island</p>
+                        <p>Always-On display</p>
+                        <p>HDR display</p>
+                        <p>True Tone</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Button  -->
+            <div class="flex flex-row w-full h-full justify-center items-center mt-10">
+                <button class="w-auto h-auto px-15 py-3 border-black border-2 rounded-lg font-semibold cursor-pointer">View More <ChevronDownIcon class="w-6 h-6 inline-block"/></button>
+            </div>
         </section>
         
         <!-- Review -->
-        <section class="w-full h-[896px] bg-amber-300 mb-5">
+        <section class="w-full min-h-[896px] bg-gray-200 mb-5">
 
         </section>
     </div>
