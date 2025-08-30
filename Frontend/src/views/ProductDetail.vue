@@ -1,5 +1,7 @@
 <script setup>
 import iphone from "@/assets/images/iphone.jpg"
+import calotta from "@/assets/images/calotta.jpg"
+
 import data from "@/data.json"
 import { ref } from "vue";
 import {
@@ -149,7 +151,8 @@ function handle_AddToCart() {
         <section class="w-full min-h-[896px] flex flex-col justify-start mb-5">
             <h2 class="mb-10 text-3xl font-semibold">Reviews</h2>
             <div class="flex flex-row gap-10 ">
-                <div class="max-w-[184px] max-h-[192px] flex-1/5 flex flex-col justify-center items-center bg-gray-100 p-4 gap-3 rounded-3xl">
+                <div
+                    class="max-w-[184px] max-h-[192px] flex-1/5 flex flex-col justify-center items-center bg-gray-100 p-4 gap-3 rounded-3xl">
                     <p class="text-6xl font-semibold">4.8</p>
                     <p class="text-xl font-light">of 125 reviews</p>
                     <div class="flex items-center">
@@ -244,8 +247,59 @@ function handle_AddToCart() {
                 </div>
             </div>
             <form class="w-full h-[64px]  mb-10 mt-10">
-                <input type="text" class="w-full h-full border-1 rouned-lg p-4" placeholder="Leave Comment"/>
+                <input type="text" class="w-full h-full border-1 rouned-lg p-4" placeholder="Leave Comment" />
             </form>
+            <div class="w-full h-full flex flex-col">
+                <div class="w-full h-wfull flex flex-row bg-gray-100 p-4 rouned-lg">
+                    <img :src="calotta" class="w-10 h-10 rounded-full mx-3 " />
+                    <div class="flex-1 flex flex-col gap-2">
+                        <div class="flex flex-row justify-between">
+                            <p class="font-semibold text-xl">Grace Caray</p>
+                            <p class="font-light">24 January,2023</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="ms-1 h-4 w-4 text-yellow-300" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                        </div>
+                        <p>I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier
+                            with my purchase!! I have a pre-paid data plan so I was worried that this phone wouldn’t
+                            connect with my data plan, since the new phones don’t have the physical Sim tray anymore,
+                            but couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro Max in excellent
+                            condition and everything is PERFECT. It was super easy to set up and the phone works and
+                            looks great. It truly was in excellent condition. Highly recommend!!!🖤</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row w-full h-full justify-center items-center mt-10">
+                <button
+                    class="w-auto h-auto px-15 py-3 border-black border-2 rounded-lg font-semibold cursor-pointer">View
+                    More
+                    <ChevronDownIcon class="w-6 h-6 inline-block" />
+                </button>
+            </div>
         </section>
     </div>
 </template>
