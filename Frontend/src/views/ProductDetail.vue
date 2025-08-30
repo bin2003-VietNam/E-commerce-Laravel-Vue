@@ -243,6 +243,9 @@ function handle_AddToCart() {
                     </div>
                 </div>
             </div>
+            <form class="w-full h-[64px]  mb-10 mt-10">
+                <input type="text" class="w-full h-full border-1 rouned-lg p-4" placeholder="Leave Comment"/>
+            </form>
         </section>
     </div>
 </template>
