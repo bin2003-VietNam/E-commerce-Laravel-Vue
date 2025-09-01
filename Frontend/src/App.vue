@@ -3,6 +3,7 @@ import Layout from './layouts/Layout.vue';
 import Home from '@/views/Home.vue'
 import Products from './views/Products.vue';
 import ProductDetail from './views/ProductDetail.vue';
+import ShoppingCart from './views/ShoppingCart.vue';
 
 </script>
 
@@ -10,8 +11,9 @@ import ProductDetail from './views/ProductDetail.vue';
   <div class="w-screen min-h-screen bg-white">
     <Layout>
       <!-- <Home /> -->
-      <ProductDetail/>
+      <!-- <ProductDetail/> -->
       <!-- <Products /> -->
+       <ShoppingCart />
     </Layout>
   </div>
 </template>

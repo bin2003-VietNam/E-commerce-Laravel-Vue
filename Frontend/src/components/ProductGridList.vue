@@ -1,5 +1,6 @@
 <script setup>
 import iphone from "@/assets/images/iphone.jpg"
+import { HeartIcon } from "@heroicons/vue/24/outline";
 
 defineProps({
     productList: {
@@ -17,7 +18,7 @@ defineProps({
             class="max-w-60 h-100 bg-gray-200 rounded-xl flex flex-col gap-3">
             <div class="w-full flex justify-end mb-2 pr-6 pt-3">
                 <div class="w-7 h-7">
-                    <img :src="heartIcon" />
+                     <HeartIcon  class="cursor-pointer"/>
                 </div>
             </div>
             <div class="w-full h-40 mb-1">

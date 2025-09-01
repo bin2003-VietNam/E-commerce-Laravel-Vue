@@ -21,7 +21,7 @@ import heartIcon from "@/assets/images/heart.png"
             </form>
         </div>
         <div class="flex flex-row justify-around items-center gap-10 font-bold">
-            <a>Home</a>
+            <a href="/" class="cursor-pointer">Home</a>
             <a>About</a>
             <a>Contact Us</a>
         </div>
