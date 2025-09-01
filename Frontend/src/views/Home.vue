@@ -7,6 +7,8 @@ import banner3 from "@/assets/images/banner3.jpg"
 import ProductGridList from "@/components/ProductGridList.vue"
 import Title from "@/components/Title.vue"
 import CategoryGrid from "@/components/CategoryGrid.vue"
+import ProductsTitle from "@/blocks/ProductsTitle.vue"
+
 
 // slider - Banner
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -49,10 +51,8 @@ let productsListSale = data.ProductListSale
 
         <!-- Product -->
         <div class="w-screen h-[1056px] bg-white px-30 py-10 text-black items-center overflow-auto">
-            <div class="w-full h-full">
-                <Title :Title_1="productsListSale" :Variant="1" /> 
-                <ProductGridList :product-list="products"/>
-            </div>
+            <ProductsTitle :productsListSale="productsListSale" />
+
         </div>
     </div>
 </template>

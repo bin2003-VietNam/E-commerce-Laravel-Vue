@@ -9,8 +9,8 @@ import ProductDetail from './views/ProductDetail.vue';
 <template>
   <div class="w-screen min-h-screen bg-white">
     <Layout>
-      <Home />
-      <!-- <ProductDetail/> -->
+      <!-- <Home /> -->
+      <ProductDetail/>
       <!-- <Products /> -->
     </Layout>
   </div>

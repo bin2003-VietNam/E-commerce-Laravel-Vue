@@ -326,7 +326,13 @@
                     "image": "iphone.jpg"
                 },
                 {
-                    "id": 5,
+                    "id": 3,
+                    "name": "Apple iPhone 14 Pro 1TB Gold",
+                    "price": 1499,
+                    "image": "iphone.jpg"
+                },
+                {
+                    "id": 4,
                     "name": "Apple iPhone 14 Pro 1TB Gold",
                     "price": 1499,
                     "image": "iphone.jpg"

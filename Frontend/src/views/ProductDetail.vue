@@ -8,16 +8,19 @@ import {
     ChevronDownIcon,
     StarIcon
 } from '@heroicons/vue/24/outline'
+import ProductsTitle from "@/blocks/ProductsTitle.vue"
+
 
 
 let dataProductDetail = ref(data.ProductDetail)
-
-
 let selectedStorage = ref(null)
+let productsListSale = data.ProductListSale
+
 
 function log(itemStorage) {
     selectedStorage.value = itemStorage
-    console.log(selectedStorage.value);
+    //console.log(selectedStorage.value);
+    console.log(productsListSale);
 }
 
 function handle_AddToWishList() {
@@ -148,7 +151,7 @@ function handle_AddToCart() {
         </section>
 
         <!-- Review -->
-        <section class="w-full min-h-[896px] flex flex-col justify-start mb-5">
+        <section class="w-full h-full flex flex-col justify-start mb-5">
             <h2 class="mb-10 text-3xl font-semibold">Reviews</h2>
             <div class="flex flex-row gap-10 ">
                 <div
@@ -301,5 +304,11 @@ function handle_AddToCart() {
                 </button>
             </div>
         </section>
+
+        <!-- Related Product -->
+         <section class="w-full h-full flex flex-col my-[80px]">
+            <ProductsTitle :productsListSale="productsListSale"/>
+         </section>
+
     </div>
 </template>
