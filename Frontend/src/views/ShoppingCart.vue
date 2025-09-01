@@ -41,11 +41,30 @@ const deleteItem = () =>{
                 </div>
             </div>
         </div>
-        <div class="flex-1/2 flex flex-col gap-4 border border-gray-500 rounded-lg py-[56px] px-[64px]">
-            <h1 class="text-2xl font-semibold">Order Summary</h1>
-            <div class="flex flex-col gap-2">
-                <p>Discount code / Promo code</p>
-                <input type="text" class="w-full h-10 border-1 border-gray-500 rounded-lg px-2 py-6" placeholder="Code"/>
+        <div class="flex-1/2">
+            <div class="w-full min-h-100 flex flex-col gap-6 border border-gray-400 rounded-lg py-[56px] px-[64px]">
+                <h1 class="text-2xl font-semibold">Order Summary</h1>
+                <div class="flex flex-col gap-2">
+                    <p>Discount code / Promo code</p>
+                    <input type="text" class="w-full h-10 border-1 border-gray-500 rounded-lg px-2 py-6" placeholder="Code"/>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <p class="text-xl font-semibold">Subtotal</p>
+                    <p class="text-xl font-semibold">$2347</p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <p class="text-lg font-light">Estimated Tax</p>
+                    <p class="text-lg font-light">$50</p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <p class="text-lg font-light">Estimated shipping & Handling</p>
+                    <p class="text-lg font-light">$29</p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <p class="text-xl font-semibold">Total</p>
+                    <p class="text-xl font-semibold">$2426</p>
+                </div>
+                <button class="mt-10 w-full h-10 bg-black rounded-lg items-center text-white cursor-pointer">Checkout</button>
             </div>
         </div>
 
