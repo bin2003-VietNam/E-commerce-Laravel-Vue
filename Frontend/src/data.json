@@ -245,20 +245,135 @@
                 "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ysvoxs5gmin3Z3ZX_3At5N3pjGDcZ34iAA&s",
                 "title": "Free Delivery",
                 "content": "1-2 day"
-
             },
             {
                 "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ysvoxs5gmin3Z3ZX_3At5N3pjGDcZ34iAA&s",
                 "title": "Instock",
                 "content": "Today"
-
             },
             {
                 "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ysvoxs5gmin3Z3ZX_3At5N3pjGDcZ34iAA&s",
                 "title": "Gruaranteed",
                 "content": "1 year"
-
             }
         ]
-    }
+    },
+    "products": [
+        {
+            "id": 1,
+            "name": "Apple iPhone 14 Pro Max 128GB Deep Pink",
+            "price": 900,
+            "image": "iphone.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Apple iPhone 14 Pro 512GB Gold",
+            "price": 1437,
+            "image": "iphone.jpg"
+        },
+        {
+            "id": 3,
+            "name": "AirPods Max Silver Starlight Aluminum",
+            "price": 549,
+            "image": "airpods.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Apple Watch Series 9 GPS 41mm Starlight",
+            "price": 399,
+            "image": "watch.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Apple iPhone 14 Pro 1TB Gold",
+            "price": 1499,
+            "image": "iphone.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Apple iPad Pro 12.9-inch Wi-Fi 256GB",
+            "price": 1199,
+            "image": "ipad.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Apple MacBook Air M2 13-inch 256GB",
+            "price": 1099,
+            "image": "macbook.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Apple AirPods Pro (2nd generation)",
+            "price": 249,
+            "image": "airpods-pro.jpg"
+        }
+    ],
+    "ProductListSale": [
+        {
+            "id": 1,
+            "title": "Big Sale iPhone",
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Apple iPhone 14 Pro Max 128GB Deep Pink",
+                    "price": 900,
+                    "image": "iphone.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Apple iPhone 14 Pro 512GB Gold",
+                    "price": 1437,
+                    "image": "iphone.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Apple iPhone 14 Pro 1TB Gold",
+                    "price": 1499,
+                    "image": "iphone.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Hot Deal Accessories",
+            "products": [
+                {
+                    "id": 3,
+                    "name": "AirPods Max Silver Starlight Aluminum",
+                    "price": 549,
+                    "image": "airpods.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Apple AirPods Pro (2nd generation)",
+                    "price": 249,
+                    "image": "airpods-pro.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Apple Watch Series 9 GPS 41mm Starlight",
+                    "price": 399,
+                    "image": "watch.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Apple Device Discount",
+            "products": [
+                {
+                    "id": 6,
+                    "name": "Apple iPad Pro 12.9-inch Wi-Fi 256GB",
+                    "price": 1199,
+                    "image": "ipad.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Apple MacBook Air M2 13-inch 256GB",
+                    "price": 1099,
+                    "image": "macbook.jpg"
+                }
+            ]
+        }
+    ]
 }
