@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 import Products from './views/Products.vue';
 import ProductDetail from './views/ProductDetail.vue';
 import ShoppingCart from './views/ShoppingCart.vue';
+import Checkout from './views/Checkout.vue';
 
 </script>
 
@@ -13,8 +14,8 @@ import ShoppingCart from './views/ShoppingCart.vue';
       <!-- <Home /> -->
       <!-- <ProductDetail/> -->
       <!-- <Products /> -->
-       <ShoppingCart />
+      <!-- <ShoppingCart /> -->
+      <Checkout />
     </Layout>
   </div>
 </template>
-
