@@ -9,6 +9,7 @@ import {
 import { ref } from "vue";
 
 let activeStep = true
+let activeShippingMethod = true
 
 </script>
 <template>
@@ -41,9 +42,9 @@ let activeStep = true
         </div>
 
         <!-- Step section -->
-        <div class="">
+        <div class="w-full min-h-[300px]">
             <!-- Step 1 -->
-            <div class="flex flex-col">
+            <!-- <div class="flex flex-col">
                 <p class="text-2xl font-semibold">Select Address</p>
                 <div class="">
                     <div class="flex flex-row gap-4 justify-between mt-5 bg-gray-200 font-medium rounded-lg py-3">
@@ -84,22 +85,62 @@ let activeStep = true
                 <div>
                     <div class="flex items-center w-full my-6">
                         <div class="flex-grow border-t border-dashed border-gray-400"></div>
-                        <button class="mx-4 w-15 h-10 flex items-center justify-center rounded-full bg-black text-white text-2xl cursor-pointer">
+                        <button
+                            class="mx-4 w-15 h-10 flex items-center justify-center rounded-full bg-black text-white text-2xl cursor-pointer">
                             +
                         </button>
                         <div class="flex-grow border-t border-dashed border-gray-400"></div>
                     </div>
                     <p class="text-center text-gray-600">Add New Address</p>
                 </div>
-                <div class="flex flex-row gap-5 justify-end mt-10">
-                    <button class="w-[210px] h-[54px] bg-black text-white rounded-lg text-xl font-semibold cursor-pointer">Back</button>
-                    <button class="w-[210px] h-[54px] bg-white text-black border-2 rounded-lg text-xl font-semibold cursor-pointer">Next</button>
+            </div> -->
+            <!-- Step 2 -->
+            <div class="flex flex-col gap-4">
+                <p class="text-2xl font-semibold">Shipment Method</p>
+                <div class="flex flex-col">
+                    <div class="flex flex-row gap-4 justify-between mt-5 border-1 border-gray-400 font-light rounded-xl py-3"
+                        :class="{
+                            'font-semibold': activeShippingMethod
+                        }">
+                        <div class="flex-6/7 flex flex-row px-6 py-2 gap-5">
+                            <input type="radio" class="w-7 h-7" />
+                            <div class="flex flex-col gap-2">
+                                <div class="flex flex-row gap-7 ">
+                                    <p class="text-xl">Free</p>
+                                    <p class="text-xl">Regulary shipment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1/7 flex flex-row gap-5 justify-center items-center">
+                            <p>17 Oct, 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-4 justify-between mt-5 border-1 border-gray-400 font-light rounded-xl py-3">
+                        <div class="flex-6/7 flex flex-row px-6 py-2 gap-5">
+                            <input type="radio" class="w-7 h-7" />
+                            <div class="flex flex-col gap-2">
+                                <div class="flex flex-row gap-7 ">
+                                    <p class="text-xl">$8.50</p>
+                                    <p class="text-xl">Get your delivery as soon as possible</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1/7 flex flex-row gap-5 justify-center items-center">
+                            <p>1 Oct, 2023</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Step 2 -->
-            <div></div>
             <!-- Step 3 -->
             <div></div>
+        </div>
+
+
+        <div class="flex flex-row gap-5 justify-end mt-10">
+            <button
+                class="w-[210px] h-[54px] bg-black text-white rounded-lg text-xl font-semibold cursor-pointer">Back</button>
+            <button
+                class="w-[210px] h-[54px] bg-white text-black border-2 rounded-lg text-xl font-semibold cursor-pointer">Next</button>
         </div>
     </div>
 </template>
