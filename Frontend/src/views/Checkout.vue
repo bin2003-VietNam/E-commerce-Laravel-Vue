@@ -1,4 +1,7 @@
 <script setup>
+import iphone from "@/assets/images/iphone.jpg"
+import creditcart from "@/assets/images/creditcart.png"
+
 import {
     MapPinIcon,
     TruckIcon,
@@ -7,6 +10,7 @@ import {
     XMarkIcon
 } from "@heroicons/vue/24/outline"
 import { ref } from "vue";
+
 
 let activeStep = true
 let activeShippingMethod = true
@@ -93,9 +97,15 @@ let activeShippingMethod = true
                     </div>
                     <p class="text-center text-gray-600">Add New Address</p>
                 </div>
+                <div class="flex flex-row gap-5 justify-end mt-10">
+                    <button
+                        class="w-[210px] h-[54px] bg-black text-white rounded-lg text-xl font-semibold cursor-pointer">Back</button>
+                    <button
+                        class="w-[210px] h-[54px] bg-white text-black border-2 rounded-lg text-xl font-semibold cursor-pointer">Next</button>
+                </div>
             </div> -->
             <!-- Step 2 -->
-            <div class="flex flex-col gap-4">
+            <!-- <div class="flex flex-col gap-4">
                 <p class="text-2xl font-semibold">Shipment Method</p>
                 <div class="flex flex-col">
                     <div class="flex flex-row gap-4 justify-between mt-5 border-1 border-gray-400 font-light rounded-xl py-3"
@@ -115,7 +125,8 @@ let activeShippingMethod = true
                             <p>17 Oct, 2023</p>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-4 justify-between mt-5 border-1 border-gray-400 font-light rounded-xl py-3">
+                    <div
+                        class="flex flex-row gap-4 justify-between mt-5 border-1 border-gray-400 font-light rounded-xl py-3">
                         <div class="flex-6/7 flex flex-row px-6 py-2 gap-5">
                             <input type="radio" class="w-7 h-7" />
                             <div class="flex flex-col gap-2">
@@ -129,18 +140,90 @@ let activeShippingMethod = true
                             <p>1 Oct, 2023</p>
                         </div>
                     </div>
+                    <div class="flex flex-row gap-5 justify-end mt-10">
+                        <button
+                            class="w-[210px] h-[54px] bg-black text-white rounded-lg text-xl font-semibold cursor-pointer">Back</button>
+                        <button
+                            class="w-[210px] h-[54px] bg-white text-black border-2 rounded-lg text-xl font-semibold cursor-pointer">Next</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Step 3 -->
+            <div class="flex flex-row min-h-200 gap-10 mb-10">
+                <div class="flex-1/2">
+                    <div class="flex flex-col gap-5 min-h-100 p-4 border-2 border-gray-300 rounded-xl">
+                        <p class="text-2xl font-semibold">Summary</p>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-row justify-between items-center p-4 bg-gray-200 rounded-xl">
+                                <div class="flex flex-row justify-start gap-4 items-center">
+                                    <img :src="iphone" class="w-20 h-20" />
+                                    <p class="text-xl font-semibold">Apple iPhone 14 Pro Max 128Gb </p>
+                                </div>
+                                <p class="text-xl font-bold">$1399</p>
+                            </div>
+                            <div class="flex flex-row justify-between items-center p-4 bg-gray-200 rounded-xl">
+                                <div class="flex flex-row justify-start gap-4 items-center">
+                                    <img :src="iphone" class="w-20 h-20" />
+                                    <p class="text-xl font-semibold">Apple iPhone 14 Pro Max 128Gb </p>
+                                </div>
+                                <p class="text-xl font-bold">$1399</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Address</p>
+                            <p class="text-lg">1131 Dusty Townline, Jacksonville, TX 40322</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Shipment method</p>
+                            <p class="text-lg">Free</p>
+                        </div>
+                        <div class="flex flex-row justify-between font-semibold">
+                            <p>Subtotal</p>
+                            <p>$2347</p>
+                        </div>
+                        <div class="flex flex-row justify-between font-semibold">
+                            <p>Estimated Tax</p>
+                            <p>$50</p>
+                        </div>
+                        <div class="flex flex-row justify-between font-semibold">
+                            <p>Estimated shipping & Handling</p>
+                            <p>$29</p>
+                        </div>
+                        <div class="flex flex-row justify-between text-xl font-semibold border-t-2 pt-5">
+                            <p>Total</p>
+                            <p>$2426</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1/2">
+                    <div class="flex flex-col gap-5">
+                        <p class="text-2xl font-bold">Payment</p>
+                        <div class="flex flex-row gap-15">
+                            <p class="pb-2 border-b-2 font-bold">Credit card</p>
+                            <p class="pb-2 border-b-2 font-bold">PayPal</p>
+                            <p class="pb-2 border-b-2 font-bold">MoMo</p>
+                        </div>
+                        <img :src="creditcart" class="w-100" />
+                        <form class="flex flex-col gap-5">
+                            <input type="text" placeholder="Cardholder name" class="p-4 border-1 rounded-lg" />
+                            <input type="text" placeholder="Card number" class="p-4 border-1 rounded-lg" />
+                            <div class="flex flex-row gap-2">
+                                <input class="flex-1/2 p-4 border-1 rounded-lg" placeholder="Exp Date" />
+                                <input class="flex-1/2 p-4 border-1 rounded-lg" placeholder="CVV" />
+                            </div>
+                        </form>
+                        <div class="flex flex-row gap-5 justify-center mt-10">
+                            <button
+                                class="w-[210px] h-[54px] bg-black text-white rounded-lg text-xl font-semibold cursor-pointer">Back</button>
+                            <button
+                                class="w-[210px] h-[54px] bg-white text-black border-2 rounded-lg text-xl font-semibold cursor-pointer">Next</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Step 3 -->
-            <div></div>
         </div>
 
 
-        <div class="flex flex-row gap-5 justify-end mt-10">
-            <button
-                class="w-[210px] h-[54px] bg-black text-white rounded-lg text-xl font-semibold cursor-pointer">Back</button>
-            <button
-                class="w-[210px] h-[54px] bg-white text-black border-2 rounded-lg text-xl font-semibold cursor-pointer">Next</button>
-        </div>
+
     </div>
 </template>
