@@ -41,7 +41,7 @@ function togglePassword(){
                     <span><img :src="googleIcon" class="w-5 h-5"/></span> Or sign in with google
                 </button>
                 <div class="flex flex-row justify-center items-center">
-                    <p>Dont have account ? <a class="cursor-pointer font-semibold">Sign up now</a></p>
+                    <p>Dont have account ? <a href="/register" class="cursor-pointer font-semibold">Sign up now</a></p>
                 </div>
             </form>
         </div>

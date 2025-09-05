@@ -50,7 +50,7 @@ function togglePassword(){
 
                 <button type="submit" class="bg-black text-white font-semibold cursor-pointer p-2 rounded-lg"> Sign up</button>
                 <div class="flex flex-row justify-center items-center">
-                    <p>Already have account ? <a class="cursor-pointer font-semibold">Sign in now</a></p>
+                    <p>Already have account ? <a href="/login" class="cursor-pointer font-semibold">Sign in now</a></p>
                 </div>
             </form>
         </div>

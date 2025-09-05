@@ -2,13 +2,14 @@
 import cartIcon from "@/assets/images/cart.png"
 import userIcon from "@/assets/images/user.png"
 import heartIcon from "@/assets/images/heart.png"
+import { RouterLink } from "vue-router"
 </script>
 
 <template>
     <!-- heading -->
     <div class="w-screen h-20 bg-transparent p-5 flex flex-row justify-around items-center text-xl border-b-1">
         <div class="flex flex-row justify-around items-center gap-10">
-            <a href="/">Bin Logo</a>
+            <RouterLink :to="{ name: 'home' }">Bin Logo</RouterLink>
             <form action="" method="POST"
                 class="flex items-center border border-gray-300 rounded-md p-2 bg-gray-100 w-80">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
@@ -21,8 +22,8 @@ import heartIcon from "@/assets/images/heart.png"
             </form>
         </div>
         <div class="flex flex-row justify-around items-center gap-10 font-bold">
-            <a href="/" class="cursor-pointer">Home</a>
-            <a>About</a>
+            <RouterLink :to="{ name: 'home' }" class="cursor-pointer">Home</RouterLink>
+            <RouterLink :to="{ name: 'category' }" class="cursor-pointer">Category</RouterLink>
             <a>Contact Us</a>
         </div>
         <div class="flex flex-row justify-around items-center gap-7">

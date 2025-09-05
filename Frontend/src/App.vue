@@ -7,20 +7,14 @@ import ShoppingCart from './views/ShoppingCart.vue';
 import Checkout from './views/Checkout.vue';
 import Login from './views/Login.vue';
 import Register from './views/Register.vue';
+import { RouterView } from 'vue-router';
+
 
 
 </script>
 
 <template>
   <div class="w-screen min-h-screen bg-white">
-    <!-- <Layout> -->
-      <!-- <Home /> -->
-      <!-- <ProductDetail/> -->
-      <!-- <Products /> -->
-      <!-- <ShoppingCart /> -->
-      <!-- <Checkout /> -->
-    <!-- </Layout> -->
-    <!-- <Login /> -->
-     <Register />
+    <RouterView />
   </div>
 </template>
