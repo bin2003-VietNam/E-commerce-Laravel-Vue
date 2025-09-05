@@ -2,7 +2,15 @@
 import cartIcon from "@/assets/images/cart.png"
 import userIcon from "@/assets/images/user.png"
 import heartIcon from "@/assets/images/heart.png"
+import register from "@/assets/images/register.png"
+import login from "@/assets/images/login.png"
+import logout from "@/assets/images/logout.png"
+
 import { RouterLink } from "vue-router"
+import { ref } from "vue"
+
+let isLogin = ref(false)
+
 </script>
 
 <template>
@@ -27,9 +35,26 @@ import { RouterLink } from "vue-router"
             <a>Contact Us</a>
         </div>
         <div class="flex flex-row justify-around items-center gap-7">
-            <img :src="heartIcon" class="w-7 h-7" />
-            <img :src="cartIcon" class="w-7 h-7" />
-            <img :src="userIcon" class="w-7 h-7" />
+            <img :src="heartIcon" class="w-7 h-7 cursor-pointer" />
+
+            <RouterLink :to="{name: 'cart'}">
+                <img :src="cartIcon" class="w-7 h-7 cursor-pointer" />
+            </RouterLink>
+
+            <div v-if="isLogin" class="flex flex-row gap-5">
+                <RouterLink :to="{ name: 'login' }">
+                    <img :src="login" class="w-7 h-7 cursor-pointer" title="login"/>
+                </RouterLink>
+                <RouterLink :to="{ name: 'register' }">
+                    <img :src="register" class="w-7 h-7 cursor-pointer" title="register"/>
+                </RouterLink>
+            </div>
+
+            <div v-else="!isLogin" class="flex flex-row gap-5">
+                <img :src="userIcon" class="w-7 h-7 cursor-pointer" title="profile"/>
+                <img :src="logout" class="w-7 h-7 cursor-pointer" title="logout"/>
+            </div>
+
         </div>
     </div>
 </template>
