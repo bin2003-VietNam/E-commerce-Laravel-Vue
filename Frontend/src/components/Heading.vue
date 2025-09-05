@@ -41,7 +41,12 @@ let isLogin = ref(false)
                 <img :src="cartIcon" class="w-7 h-7 cursor-pointer" />
             </RouterLink>
 
+            
             <div v-if="isLogin" class="flex flex-row gap-5">
+                <img :src="userIcon" class="w-7 h-7 cursor-pointer" title="profile"/>
+                <img :src="logout" class="w-7 h-7 cursor-pointer" title="logout"/>
+            </div>
+            <div v-else="!isLogin" class="flex flex-row gap-5">
                 <RouterLink :to="{ name: 'login' }">
                     <img :src="login" class="w-7 h-7 cursor-pointer" title="login"/>
                 </RouterLink>
@@ -49,12 +54,7 @@ let isLogin = ref(false)
                     <img :src="register" class="w-7 h-7 cursor-pointer" title="register"/>
                 </RouterLink>
             </div>
-
-            <div v-else="!isLogin" class="flex flex-row gap-5">
-                <img :src="userIcon" class="w-7 h-7 cursor-pointer" title="profile"/>
-                <img :src="logout" class="w-7 h-7 cursor-pointer" title="logout"/>
-            </div>
-
+            
         </div>
     </div>
 </template>
