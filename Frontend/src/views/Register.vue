@@ -8,8 +8,8 @@ import axios from "axios";
 import axiosClient from "@/axiosClient";
 
 
-let confirmedPass = reactive('')
-const form = reactive({
+let confirmedPass = ref('')
+const form = ref({
     name: "",
     email: "",
     password: ""
@@ -17,33 +17,19 @@ const form = reactive({
 
 async function submitRegisterForm() {
 
-    if (confirmedPass !== form.password) {
-        alert('confirm pass is wrong')
-        return
-    }
-
     try {
         await axiosClient.get("/sanctum/csrf-cookie");
-        console.log("✅ CSRF cookie fetched");
-        const response = await axiosClient.post("/users", form)
-        const data = response.data
-        console.log(data);
+
+        // B2: gửi request đăng ký
+        const res = await axiosClient.post("/users", form.value);
+
+        console.log("Register success", res.data);
+        // const response = await axiosClient.post("/users", form)
+        // const data = response.data
+        // console.log(data);
     } catch (error) {
         console.error("Axios error:", error.response)
     }
-    if (confirmedPass !== form.password) {
-        alert('confirm pass is wrong')
-        return
-    }
-
-    // try {
-    //     await axiosClient.get("/sanctum/csrf-cookie");
-    //     console.log("✅ CSRF cookie fetched");
-    //     await axiosClient.get("/users")
-    //     console.log('success');
-    // } catch (error) {
-    //     console.error("Axios error:", error.response)
-    // }
 }
 
 </script>
@@ -58,8 +44,7 @@ async function submitRegisterForm() {
                 <p class="text-2xl font-semibold">Register</p>
             </div>
 
-            <form 
-                @submit.prevent="submitForm" class="mt-10 flex flex-col gap-5">
+            <form @submit.prevent="submitForm" class="mt-10 flex flex-col gap-5">
                 <div class="flex flex-col gap-2">
                     <label class="font-light">User Name</label>
                     <input v-model="form.name" type="text" class="w-full h-10 bg-gray-200 p-5 rounded-lg"
@@ -87,9 +72,8 @@ async function submitRegisterForm() {
 
 
 
-                <button 
-                    @click="submitRegisterForm"
-                    type="submit" class="bg-black text-white font-semibold cursor-pointer p-2 rounded-lg"> Sign
+                <button @click="submitRegisterForm" type="submit"
+                    class="bg-black text-white font-semibold cursor-pointer p-2 rounded-lg"> Sign
                     up</button>
                 <div class="flex flex-row justify-center items-center">
                     <p>Already have account ? <a href="/login" class="cursor-pointer font-semibold">Sign in now</a></p>
