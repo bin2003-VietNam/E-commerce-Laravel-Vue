@@ -5,6 +5,8 @@ import googleIcon from "@/assets/images/googleIcon.png"
 
 import { reactive, ref } from "vue";
 import axios from "axios";
+import axiosClient from "@/axiosClient";
+
 
 let confirmedPass = reactive('')
 const form = reactive({
@@ -15,29 +17,33 @@ const form = reactive({
 
 async function submitRegisterForm() {
 
-    // if (confirmedPass !== form.password) {
-    //     alert('confirm pass is wrong')
-    //     return
-    // }
-
-    // try {
-    //     const response = await axios.post("http://127.0.0.1:8000/api/users", form)
-    //     const data = response.data
-    //     console.log(data);
-    // } catch (error) {
-    //     console.error("Axios error:", error.response)
-    // }
-    // if (confirmedPass !== form.password) {
-    //     alert('confirm pass is wrong')
-    //     return
-    // }
+    if (confirmedPass !== form.password) {
+        alert('confirm pass is wrong')
+        return
+    }
 
     try {
-        await axios.get("http://127.0.0.1:8000/users")
-        console.log('success');
+        await axiosClient.get("/sanctum/csrf-cookie");
+        console.log("✅ CSRF cookie fetched");
+        const response = await axiosClient.post("/users", form)
+        const data = response.data
+        console.log(data);
     } catch (error) {
         console.error("Axios error:", error.response)
     }
+    if (confirmedPass !== form.password) {
+        alert('confirm pass is wrong')
+        return
+    }
+
+    // try {
+    //     await axiosClient.get("/sanctum/csrf-cookie");
+    //     console.log("✅ CSRF cookie fetched");
+    //     await axiosClient.get("/users")
+    //     console.log('success');
+    // } catch (error) {
+    //     console.error("Axios error:", error.response)
+    // }
 }
 
 </script>
