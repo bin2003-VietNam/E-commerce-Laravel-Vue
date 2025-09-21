@@ -5,8 +5,6 @@ import googleIcon from "@/assets/images/googleIcon.png"
 
 import { reactive, ref } from "vue";
 import axios from "axios";
-import axiosClient from "@/axiosClient";
-
 
 let confirmedPass = ref('')
 const form = ref({
@@ -18,13 +16,13 @@ const form = ref({
 async function submitRegisterForm() {
 
     try {
-        await axiosClient.get("/sanctum/csrf-cookie");
-
-        // B2: gửi request đăng ký
-        const res = await axiosClient.post("/users", form.value);
+        const res = await axios.post("http://127.0.0.1:8000/api/user", form.value);
 
         console.log("Register success", res.data);
-        // const response = await axiosClient.post("/users", form)
+
+
+
+        // const response = await axios.post("/users", form)
         // const data = response.data
         // console.log(data);
     } catch (error) {
