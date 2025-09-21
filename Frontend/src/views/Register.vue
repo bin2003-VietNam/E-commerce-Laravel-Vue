@@ -16,7 +16,7 @@ const form = ref({
 async function submitRegisterForm() {
 
     try {
-        const res = await axios.post("http://127.0.0.1:8000/api/user", form.value);
+        const res = await axios.post("http://127.0.0.1:8000/api/users", form.value);
 
         console.log("Register success", res.data);
 

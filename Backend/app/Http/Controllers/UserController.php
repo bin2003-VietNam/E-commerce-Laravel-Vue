@@ -18,10 +18,6 @@ class UserController extends Controller
             'message' => 'User created successfully',
         ]);
     }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         Log::info('API /users đã được gọi', $request->all());
@@ -43,28 +39,18 @@ class UserController extends Controller
             'user' => $user
         ]);
     }
-
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
-        //
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
-        //
+
     }
 }
